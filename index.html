@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formación e Informática MurgIndalo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background: #34495e;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        nav a:hover {
+            background: #1abc9c;
+            color: white;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        section {
+            display: none;
+            text-align: center;
+            max-width: 1200px;
+        }
+        section.active {
+            display: block;
+        }
+        #dafo article{
+            display: inline-block;
+            width: 49%;
+            background-color: bisque;
+
+        }
+        
+        .subsection{
+            border: 2px solid black;
+        }
+        ul{
+            list-style: none;
+        }
+
+        li{
+            text-align: left;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+        h3{
+            background-color: #7F94A7;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formación e Informática MurgIndalo</h1>
+    </header>
+    <nav>
+        <a onclick="showSection('quienes-somos')">Quiénes somos</a>
+        <a onclick="showSection('idea')">Nuestra idea</a>
+        <a onclick="showSection('entorno')">Análisis del entorno</a>
+        <a onclick="showSection('dafo')">Análisis DAFO</a>
+        <a onclick="showSection('marketing')">Marketing estratégico</a>
+        <a onclick="showSection('servicio')">Política servicios</a>
+        <a onclick="showSection('precios')">Política precios</a>
+        <a onclick="showSection('distribucion')">Política distribución</a>
+        <a onclick="showSection('comunicacion')">Política comunicación</a>
+        <a onclick="showSection('evaluacion')">Nos evaluamos</a>
+    </nav>
+    <div class="container">
+        <section id="quienes-somos" class="active">
+            <h2>Quiénes somos</h2>
+            <p>Nuestra empresa de servicios informáticos se especializa en tres áreas clave: la formación de trabajadores a través de plataformas de aprendizaje digital personalizadas, el desarrollo de software a medida para optimizar procesos empresariales, y el mantenimiento informático para garantizar el buen funcionamiento de infraestructuras tecnológicas. Ofrecemos soluciones flexibles y eficientes que impulsan la productividad, mejoran la innovación y aseguran la continuidad operativa de las organizaciones.</p>
+        </section>
+
+        <section id="idea">
+            <h2>Nuestra idea</h2>
+            <p>Nos centramos en tres ramas principales:</p>
+            <ul>
+                <li><b>Creación de plataformas de aprendizaje digital personalizadas:</b> Aplicaciones adaptadas a las necesidades específicas de cada empresa para capacitar a empleados de manera remota y flexible.</li>
+                <li><b>Desarrollo de software a medida:</b> Diseñamos e implementamos soluciones informáticas personalizadas para optimizar tareas y procesos empresariales únicos.</li>
+                <li><b>Mantenimiento informático:</b> Garantizamos el buen funcionamiento de los sistemas tecnológicos, evitando fallos y mejorando la seguridad.</li>
+            </ul>
+
+            <h2>Promotor</h2>
+            <p><b>Nombre:</b> Lucas Sánchez Acosta</p>
+            <p><b>Nacimiento:</b> 10 de diciembre de 1981</p>
+            <p><b>Domicilio:</b> C/Río Guadiaro, 14, 04700 El Ejido (Almería)</p>
+            <p><b>Teléfono:</b> 637449107</p>
+            <p><b>Email:</b> lucassanchezacosta@gmail.com</p>
+            <p><b>Descripción:</b> Desde muy joven he tenido espíritu emprendedor y tengo experiencia en gestión empresarial e informática. Soy técnico superior en sistemas de telecomunicaciones e informáticos, con sólida experiencia en proyectos de formación y desarrollo tecnológico.</p>
+
+            <h2>Cultura empresarial y responsabilidad social</h2>
+            <p>Nuestra empresa se centra en la innovación, la colaboración y el aprendizaje continuo. Fomentamos un entorno inclusivo que valora la diversidad y promueve el crecimiento profesional. Diseñamos soluciones accesibles y sostenibles para democratizar el conocimiento y reducir brechas formativas, impactando positivamente en la sociedad.</p>
+
+        </section>
+
+        <section id="entorno">
+        <!-- Factores del Entorno General -->
+        <div class="section">
+            <h2>Factores del Entorno General</h2>
+
+            <!-- Factores Económicos -->
+            <div class="subsection">
+                <h3>Factores Económicos</h3>
+                <ul>
+                    <li><strong>Crecimiento económico:</strong> El entorno económico en crecimiento suele generar un aumento en la demanda de servicios informáticos.</li>
+                    <li><strong>Demanda de servicios tecnológicos:</strong> La digitalización y la transformación digital aumentan la demanda de servicios informáticos.</li>
+                    <li><strong>Competencia y precios en el mercado:</strong> En un mercado competitivo, los precios bajos pueden reducir los márgenes de beneficio.</li>
+                    <li><strong>Acceso a financiamiento e inversión:</strong> La disponibilidad de crédito y la inversión externa facilita el crecimiento y la innovación.</li>
+                    <li><strong>Tendencias en tecnología y costos de innovación:</strong> Los avances tecnológicos crean oportunidades, pero también implican altos costos de I+D.</li>
+                </ul>
+            </div>
+
+            <!-- Factores Socioculturales -->
+            <div class="subsection">
+                <h3>Factores Socioculturales</h3>
+                <ul>
+                    <li><strong>Adopción de la tecnología:</strong> La adopción tecnológica influye en la demanda de servicios informáticos.</li>
+                    <li><strong>Digitalización en el lugar de trabajo:</strong> La digitalización empresarial aumenta la necesidad de formación y desarrollo tecnológico.</li>
+                    <li><strong>Preferencias por el trabajo remoto:</strong> El trabajo remoto impulsó la demanda de soluciones tecnológicas para mantener la productividad.</li>
+                    <li><strong>Cambio en las expectativas de los empleados:</strong> Los empleados demandan herramientas tecnológicas que aumenten su productividad.</li>
+                    <li><strong>Educación tecnológica y capacitación continua:</strong> Las empresas deben invertir en la capacitación de su personal para mantenerse competitivas.</li>
+                </ul>
+            </div>
+
+            <!-- Factores Políticos y Legales -->
+            <div class="subsection">
+                <h3>Factores Políticos y Legales</h3>
+                <ul>
+                    <li><strong>Políticas de apoyo a la tecnología y digitalización:</strong> Los gobiernos promueven políticas para incentivar la digitalización y la innovación.</li>
+                    <li><strong>Regulaciones sobre ciberseguridad y privacidad de datos:</strong> Las legislaciones como el GDPR exigen medidas de seguridad y privacidad.</li>
+                    <li><strong>Normativas sobre comercio electrónico y software:</strong> Las leyes sobre derechos de autor y licencias afectan a las empresas de servicios informáticos.</li>
+                    <li><strong>Programas de capacitación y formación gubernamentales:</strong> Iniciativas gubernamentales pueden aumentar la demanda de formación tecnológica.</li>
+                    <li><strong>Políticas de contratación pública:</strong> Los gobiernos son grandes consumidores de servicios tecnológicos.</li>
+                </ul>
+            </div>
+
+            <!-- Factores Tecnológicos -->
+            <div class="subsection">
+                <h3>Factores Tecnológicos</h3>
+                <ul>
+                    <li><strong>Avances tecnológicos constantes:</strong> La rapidez en el surgimiento de nuevas tecnologías obliga a las empresas a innovar constantemente.</li>
+                    <li><strong>Transformación digital de las empresas:</strong> La digitalización de procesos genera una mayor demanda de servicios tecnológicos.</li>
+                    <li><strong>Crecimiento de la computación en la nube:</strong> El uso de la nube transforma la forma en que las empresas gestionan sus datos y procesos.</li>
+                    <li><strong>Ciberseguridad:</strong> La seguridad informática es crucial debido a las crecientes amenazas cibernéticas.</li>
+                    <li><strong>Acceso a herramientas de desarrollo de software:</strong> Herramientas avanzadas aumentan la productividad y la calidad en los proyectos tecnológicos.</li>
+                </ul>
+            </div>
+
+            <!-- Factores Tecnológicos en E-learning y Desarrollo de Software -->
+            <div class="subsection">
+                <h3>Factores Tecnológicos en E-learning y Desarrollo de Software</h3>
+                <ul>
+                    <li><strong>Accesibilidad e inclusión:</strong> Las plataformas deben ser accesibles para personas con discapacidades.</li>
+                    <li><strong>Inteligencia artificial (IA):</strong> La IA permite personalizar el aprendizaje y adaptarlo a las necesidades individuales.</li>
+                    <li><strong>Plataformas de gestión del aprendizaje (LMS):</strong> Plataformas como Moodle y Blackboard facilitan la gestión de cursos y la evaluación.</li>
+                    <li><strong>Computación en la nube:</strong> El desarrollo de software en la nube permite soluciones escalables y de alta disponibilidad.</li>
+                    <li><strong>Seguridad y privacidad:</strong> La ciberseguridad es fundamental para proteger los datos y la privacidad de los usuarios.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Factores del Entorno Específico -->
+        <div class="section">
+            <h2>Factores del Entorno Específico</h2>
+
+            <!-- La Competencia -->
+            <div class="subsection">
+                <h3>La Competencia</h3>
+                <ul>
+                    <li><strong>Intensidad de la competencia:</strong> El mercado está saturado con empresas ofreciendo servicios similares.</li>
+                    <li><strong>Barreras de entrada:</strong> Las barreras de entrada son bajas, lo que favorece la aparición de nuevos competidores.</li>
+                    <li><strong>Diferenciación y valor añadido:</strong> Las empresas que integran tecnologías innovadoras pueden diferenciarse.</li>
+                    <li><strong>Competencia indirecta:</strong> Herramientas como plataformas de autoayuda y soluciones prediseñadas representan una competencia indirecta.</li>
+                    <li><strong>Factores de éxito frente a la competencia:</strong> Tener personal altamente cualificado es clave para el éxito.</li>
+                </ul>
+            </div>
+
+            <!-- Los Clientes -->
+            <div class="subsection">
+                <h3>Los Clientes</h3>
+                <ul>
+                    <li><strong>Segmentación del mercado:</strong> Empresas (B2B), Individuos (B2C), y el Sector Educativo.</li>
+                    <li><strong>Necesidades y expectativas de los clientes:</strong> Personalización, fiabilidad, soporte, transformación digital y seguridad.</li>
+                    <li><strong>Relación a largo plazo y fidelización:</strong> Contratos de mantenimiento y renovación de licencias fomentan la fidelización.</li>
+                </ul>
+            </div>
+
+            <!-- Los Proveedores o Intermediarios -->
+            <div class="subsection">
+                <h3>Los Proveedores o Intermediarios</h3>
+                <ul>
+                    <li><strong>Tipos de proveedores:</strong> Proveedores de hardware, software, nube y contenido digital.</li>
+                    <li><strong>Dependencia de los proveedores:</strong> Riesgos derivados de la dependencia de proveedores internacionales.</li>
+                    <li><strong>Impacto de los intermediarios:</strong> Las plataformas de terceros pueden generar costos adicionales.</li>
+                    <li><strong>Retos relacionados con los proveedores:</strong> Incrementos de costos, dependencia tecnológica y actualizaciones constantes.</li>
+                </ul>
+            </div>
+
+            <!-- Productos Sustitutivos -->
+            <div class="subsection">
+                <h3>Productos Sustitutivos</h3>
+                <ul>
+                    <li><strong>Competencia tecnológica:</strong> Plataformas e-learning gratuitas o de bajo costo, y software de automatización.</li>
+                    <li><strong>Competencia en el mercado de contenidos educativos:</strong> MOOC como Coursera, Udemy y LinkedIn Learning.</li>
+                    <li><strong>Impacto de los productos sustitutivos:</strong> Alta amenaza de productos sustitutivos, siendo la diferenciación clave.</li>
+                </ul>
+            </div>
+        </div>
+        </section>
+    
+        <section id="dafo">
+            <h1>Análisis DAFO</h1>
+            <article id="amenazas">
+                <h3>AMENAZAS</h3>
+                <p>amenaza1</p>
+                <p>amenaza2</p>
+                <p>amenaza3</p>
+                <p>amenaza4</p>
+                <p>amenaza5</p>
+            </article>
+            <article id="debilidades">
+                <h3>DEBILIDADES</h3>
+                <p>debilidad1</p>
+                <p>debilidad2</p>
+                <p>debilidad3</p>
+                <p>debilidad4</p>
+                <p>debilidad5</p>
+            </article>
+            <article id="oportunidades">
+                <h3>OPORTUNIDADES</h3>
+                <p>oportunidad1</p>
+                <p>oportunidad2</p>
+                <p>oportunidad3</p>
+                <p>oportunidad4</p>
+                <p>oportunidad5</p>
+            </article>
+            <article id="fortalezas">
+                <h3>FORTALEZAS</h3>
+                <p>fortaleza1</p>
+                <p>fortaleza2</p>
+                <p>fortaleza3</p>
+                <p>fortaleza4</p>
+                <p>fortaleza5</p>
+            </article>
+
+
+        </section>
+    
+    
+    </div>
+    <footer>
+        <p>&copy; 2025 Formación e Informática MurgIndalo. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        function showSection(id) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+</body>
+</html>
