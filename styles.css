@@ -1,0 +1,741 @@
+:root {
+    --color-primario: RebeccaPurple;
+    --color-secundario: MediumSlateBlue;
+    --color-terciario: lightgreen;
+    --color-blanco: whitesmoke;
+    --color-negro: darkslategray;
+    --fuente-principal: 'Roboto', sans-serif;
+    --color-accion: bisque;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+/********** HEADER **********/
+header {
+    background: var(--color-primario);
+    color: var(--color-blanco);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+header img {
+    width: 180px;
+}
+
+header h1 {
+    text-shadow: 3px 3px 2px black;
+    font-size: 42px;
+}
+
+header p {
+    font-size: larger;
+}
+/******** FIN HEADER ********/
+
+
+
+/********** NAVBAR **********/
+nav {
+    background: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    text-align: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+nav a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+nav a:hover {
+    background: var(--color-accion);
+    color: var(--color-negro);
+}
+/******** FIN NAVBAR ********/
+
+
+
+/******** BODY y FOOTER ********/
+body {
+    font-family: var(--fuente-principal);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    background: var(--color-primario);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+/****** FIN BODY y FOOTER ******/
+
+
+
+/* SECCIONES */
+section {
+    display: none;
+    padding: 20px 20px 50px 20px;
+
+}
+
+section.active {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    margin: 2em 0 0 0;
+}
+
+/*** Quienes somos ***/
+.borde-texto {
+    font-size: 32px;
+    font-weight: bold;
+    color: lightyellow;
+    text-shadow:
+        3px 3px 5px black,
+        -3px -3px 5px black,
+        3px -3px 5px black,
+        -3px 3px 5px black;
+    padding: 23px;
+}
+
+.cristal {
+    /* Fondo translúcido */
+    background: rgba(102, 51, 153, 0.4);
+    /* Desenfoque del contenido detrás */
+    backdrop-filter: blur(15px);
+    /* Bordes redondeados */
+    border-radius: 14px;
+    padding: 15px 30px;
+    color: var(--color-blanco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 3px solid var(--color-primario);
+    width: 60%;
+    align-self: center;
+    text-indent: 2em;
+}
+
+.cristal::first-letter {
+    text-transform: capitalize;
+    font-size: 1.5em;
+}
+
+.cristal:hover {
+    /* Escalar al 120% */
+    transform: scale(1.4);
+    z-index: 1;
+}
+
+#localizacion {
+    text-align: center;
+}
+
+iframe {
+    align-self: center;
+}
+
+#quienes p {
+    /* Tamaño inicial */
+    font-size: 1.1em;
+    /* Duraciones de animación */
+    transition: transform 1s ease-out, transform 0.3s ease-in;
+    /* Necesario para el escalado */
+    display: inline-block;
+    margin: 25px;
+}
+
+#quienes div {
+    background-image: url('imagenes/imagen2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 30vw;
+    min-height: 50vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+/*** Idea ***/
+.card {
+    width: 40vw;
+    display: flex;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+.card h3 {
+    rotate: -90deg;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    font-size: 1.3em;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+
+    background-color: var(--color-terciario);
+    padding: 10px;
+    align-content: stretch;
+    width: 150px;
+    border-radius: 55px 55px 0 0;
+
+}
+
+.concepto {
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#cultura {
+    height: 250px;
+    align-items: center;
+}
+
+/*** Análisis entorno ***/
+#entorno {
+    width: 65%;
+    margin: auto;
+    max-width: 900px;
+
+}
+
+#entorno h3 {
+    color: var(--color-negro);
+    text-align: center;
+    background-color: var(--color-terciario);
+    padding: 5px 0;
+    margin: 45px 0 0 0;
+    font-size: 22px;
+    border-radius: 1em 1em 0 0;
+}
+
+#entorno p {
+    padding: 5px 25px;
+}
+
+#entorno p:nth-child(odd) {
+    background-color: #E0F5E0;
+}
+
+#entorno p:nth-child(even) {
+    background-color: mintcream;
+}
+
+#entorno p:last-of-type {
+    margin-bottom: 20px;
+}
+
+/*** Análisis Dafo ***/
+#dafo {
+    width: 50vw;
+    margin: auto;
+}
+
+#dafo article {
+    display: inline-block;
+    width: 50%;
+
+}
+
+#cubo {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 1em;
+    color: var(--color-negro);
+    overflow: hidden;
+}
+
+#cubo h3 {
+    text-align: center;
+    background-color: #595154;
+    color: var(--color-blanco);
+    font-size: x-large;
+}
+
+#cubo p {
+    padding: 6px 20px;
+}
+
+#amenazas {
+    background-color: #E2988B;
+}
+
+#debilidades {
+    background-color: #EBBAB2;
+}
+
+#oportunidades {
+    background-color: #F1D294;
+}
+
+#fortalezas {
+    background-color: #F5E1B7;
+}
+
+/*** Marketing estratégico ***/
+#marketing.active {
+    width: 70vw;
+    margin: auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 8em;
+}
+
+#marketing article {
+    width: 49%;
+}
+
+#marketing h3 {
+    color: var(--color-blanco);
+    background-color: var(--color-terciario);
+    border-radius: 2em;
+    padding: 10px 30px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: larger;
+    color: var(--color-negro);
+}
+
+#marketing p {
+    padding: 7px 20px;
+}
+
+
+/*** Servicios ***/
+
+#logo_nombre {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70vw;
+    margin: auto;
+}
+
+#logo_nombre img {
+    width: 50%;
+}
+
+#logo_nombre p {
+    width: 60%;
+    scale: 1.1;
+    color: var(--color-accion);
+    text-align: center;
+}
+
+#lista_servicios {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    gap: 2em;
+}
+
+#lista_servicios p {
+    padding: 15px 25px;
+
+}
+
+#lista_servicios p:nth-child(odd) {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    font-size: larger;
+    font-weight: 700;
+}
+
+#lista_servicios p:nth-child(even) {
+    background-color: lavender;
+    color: var(--color-negro);
+
+}
+
+#contenedor_servicios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3em;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#contenedor_servicios>div {
+    width: 30%;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+#garantia {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+    gap: 2em;
+}
+
+#garantia p {
+    padding: 10px 25px;
+    background-color: lavender;
+}
+
+#garantia h3 {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    font-size: x-large;
+    text-align: center;
+    padding: 10px 25px;
+}
+
+#garantia>div:nth-of-type(1) p:nth-child(even),
+#garantia>div:nth-of-type(2) p:nth-child(even) {
+    background-color: var(--color-secundario);
+    font-size: larger;
+    font-weight: 700;
+    color: var(--color-blanco);
+}
+
+#garantia>div:nth-of-type(1),
+#garantia>div:nth-of-type(2) {
+    border-radius: 1.5em;
+    overflow: hidden;
+    width: 70%;
+    max-width: 600px;
+
+}
+
+#mejora_ciclo {
+    display: flex;
+    width: 100%;
+
+    justify-content: center;
+
+
+}
+
+#mejora,
+#ciclo {
+    width: 45%;
+}
+
+#mejora div,
+#ciclo div {
+    border-radius: 2em;
+    overflow: hidden;
+
+}
+
+#mejora:nth-child(1)>div {
+    margin-bottom: 2em;
+}
+
+#mejor {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    width: 1500px;
+}
+
+#ciclo h3 {
+    background-color: var(--color-primario);
+
+}
+
+
+/*** Precios ***/
+#precios {
+    align-items: center;
+    gap: 5em;
+
+}
+
+.tabla {
+    width: 70vw;
+    border-radius: 2em;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+.tabla th {
+    background-color: salmon;
+    font-size: larger;
+}
+
+.tabla tr:nth-child(even) {
+    background-color: #FEB9A8;
+}
+
+.tabla tr:nth-child(odd) {
+    background-color: #FFE3DC;
+}
+
+.tabla th,
+.tabla td {
+    padding: 10px 25px;
+}
+
+
+.card-consideraciones {
+    width: 40vw;
+    min-width: 700px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+.card-consideraciones h3 {
+    rotate: -90deg;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    font-size: 1.3em;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+    background-color: salmon;
+    padding: 10px;
+    align-content: stretch;
+    width: 150px;
+    border-radius: 55px 55px 0 0;
+
+}
+
+.card-consideraciones p {
+    padding: 7px 15px;
+}
+
+
+/*** Distribucion ***/
+#distribucion {
+    width: 50vw;
+    max-width: 850px;
+    min-width: 450px;
+    margin: auto;
+    color: var(--color-negro);
+    align-content: center;
+}
+
+#distribucion h3 {
+    text-wrap: nowrap;
+}
+
+#distribucion>h3:nth-of-type(odd)>span {
+    background-color: salmon;
+    padding: 15px 50px;
+    border-radius: 2em;
+}
+
+#distribucion>h3:nth-of-type(even)>span {
+    background-color: #FEB9A8;
+    padding: 6px 70px;
+    border-radius: 2em;
+}
+
+#distribucion h3:nth-of-type(odd) {
+    margin: 5em 0 1.5em 0;
+}
+
+#distribucion h3:nth-of-type(even) {
+    margin: 1em 0;
+}
+
+
+/*** Comunicación ***/
+#comunicacion {
+    align-items: center;
+    gap: 3em;
+}
+
+#comunicacion h2 {
+    font-size: xx-large;
+    padding: 1em 0;
+}
+
+.eslogan {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    width: 70vw;
+}
+
+.eslogan h3 {
+    color: var(--color-blanco);
+    background-color: var(--color-secundario);
+    padding: 1em 3em;
+    font-size: x-large;
+
+
+}
+
+.eslogan p {
+    padding: 1.5em 3em;
+    background-color: #E0D9FC;
+}
+
+#eslogan-p {
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.eslogan>div {
+    width: 45%;
+    border-radius: 2em;
+    overflow: hidden;
+    background-color: #E0D9FC;
+}
+
+.promocion {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.promocion h3 {
+    padding: 1em;
+}
+
+.medios {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: #C6BDF9;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+.medios p {
+    padding: 0.5em 2em;
+    background-color: #E0D9FC;
+}
+
+.medios p:last-of-type {
+    border-radius: 0 0 2em 2em;
+    padding-bottom: 1em;
+}
+
+.medios p:first-of-type {
+    border-radius: 2em 2em 0 0;
+    padding-top: 1em;
+}
+
+.medios p:only-of-type {
+    border-radius: 2em;
+    padding: 1em 2em;
+}
+
+.medios h3 {
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.tabla-marketing {
+    width: 70vw;
+    border-radius: 2em;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+.tabla-marketing th {
+    background-color: var(--color-secundario);
+    font-size: larger;
+    color: var(--color-blanco);
+}
+
+.tabla-marketing tr:nth-child(even) {
+    background-color: #C6BDF9;
+}
+
+.tabla-marketing tr:nth-child(odd) {
+    background-color: #E0D9FC;
+}
+
+.tabla-marketing th,
+.tabla-marketing td {
+    padding: 10px 25px;
+}
+
+.tabla-marketing td:nth-child(4) {
+    text-align: right;
+    padding-right: 3em;
+}
+
+
+
+.card-evaluacion {
+    width: 40vw;
+    min-width: 700px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+.card-evaluacion h3 {
+    rotate: -90deg;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    font-size: 1.3em;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+    background-color: var(--color-secundario);
+    padding: 10px;
+    align-content: stretch;
+    width: 150px;
+    border-radius: 55px 55px 0 0;
+    color: var(--color-blanco);
+
+}
+
+.card-evaluacion p {
+    padding: 7px 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
